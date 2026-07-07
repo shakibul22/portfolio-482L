@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bali | Shakib's Travels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">SHA<span>KIB</span></a>
+                <button class="hamburger" id="hamburger">&#9776;</button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="bali.html" class="active">Bali</a></li>
+                    <li><a href="kyoto.html">Kyoto</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner banner-bali">
+        <div class="banner-content">
+            <h1>Bali, Indonesia</h1>
+            <p>The Island of the Gods</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="travel-content">
+                <div class="travel-content-img">
+                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=800&q=80"
+                        alt="Bali rice terrace">
+                </div>
+                <div>
+                    <h2>Why I Loved Bali</h2>
+                    <p>
+                        Bali was the first trip that really made me fall in love with travel.
+                        The mix of lush green rice terraces, friendly people and a slow, calm
+                        pace of life made it hard to leave.
+                    </p>
+                    <p>
+                        Mornings started with fresh fruit and coffee, and most days ended
+                        watching the sunset from a quiet beach.
+                    </p>
+                    <ul class="highlights">
+                        <li>Tegallalang Rice Terraces</li>
+                        <li>Uluwatu Temple at sunset</li>
+                        <li>Snorkelling in Nusa Penida</li>
+                        <li>The waterfalls near Ubud</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="travel-content">
+                <div class="travel-content-img">
+                    <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80"
+                        alt="Bali beach">
+                </div>
+                <div>
+                    <h2>Best Time to Visit</h2>
+                    <p>
+                        The dry season from April to October is the sweet spot &mdash; warm
+                        days, clear skies and calm seas that are perfect for diving.
+                    </p>
+                    <p>
+                        If you like things quieter and cheaper, the shoulder months of April
+                        and October give you great weather without the big crowds.
+                    </p>
+                </div>
+            </div>
+
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=500&q=80" alt="Bali rice field">
+                <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=500&q=80" alt="Bali temple gate">
+                <img src="https://images.unsplash.com/photo-1573790387438-4da905039392?auto=format&fit=crop&w=500&q=80" alt="Bali coast">
+                <img src="https://images.unsplash.com/photo-1542897644-e04428948020?auto=format&fit=crop&w=500&q=80" alt="Bali waterfall">
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <h4>Shakib</h4>
+                    <p>Web developer and traveller sharing work and stories from the road.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="bali.html">Bali</a>
+                    <a href="kyoto.html">Kyoto</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Me</h4>
+                    <div class="footer-social">
+                        <a href="#" title="Twitter">X</a>
+                        <a href="#" title="LinkedIn">in</a>
+                        <a href="#" title="GitHub">GH</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Shakib. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
+
+</body>
+
+</html>
