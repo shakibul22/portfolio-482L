@@ -4,43 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shakib | Portfolio</title>
+    <meta name="description" content="Shakib — web developer and traveller. Portfolio, projects and travel stories.">
+    <title>Shakib | Web Developer &amp; Traveller</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- Header / Navbar -->
     <header class="header">
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">SHA<span>KIB</span></a>
-                <button class="hamburger" id="hamburger">&#9776;</button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
                 <ul class="nav-links" id="nav-links">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
                     <li><a href="bali.html">Bali</a></li>
                     <li><a href="kyoto.html">Kyoto</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="santorini.html">Santorini</a></li>
+                    <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <!-- Hero -->
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-inner">
                 <div class="hero-text">
                     <h4>Hello, I am</h4>
-                    <h1>Shakib <br> Web Developer &amp; Traveller</h1>
+                    <h1>Shakib <br><span class="accent">Developer</span> &amp; Traveller</h1>
                     <p>
                         I build clean, responsive websites and I love exploring the world in
                         my free time. This little corner of the web is where my work and my
-                        travel stories live together.
+                        travel stories live side by side.
                     </p>
                     <div class="hero-actions">
-                        <a href="#contact" class="btn">Get in Touch</a>
+                        <a href="#projects" class="btn">View My Work</a>
                         <div class="socials">
                             <a href="#" title="Twitter">X</a>
                             <a href="#" title="LinkedIn">in</a>
                             <a href="#" title="GitHub">GH</a>
+                        </div>
+                    </div>
+                    <div class="hero-stats">
+                        <div>
+                            <span class="num">3+</span>
+                            <span class="label">Years Coding</span>
+                        </div>
+                        <div>
+                            <span class="num">20+</span>
+                            <span class="label">Projects Built</span>
+                        </div>
+                        <div>
+                            <span class="num">8</span>
+                            <span class="label">Countries Visited</span>
                         </div>
                     </div>
                 </div>
@@ -51,8 +72,10 @@
             </div>
         </div>
     </section>
+
+    <!-- About -->
     <section class="section" id="about">
-        <div class="container">
+        <div class="container reveal">
             <h2 class="section-title">About Me</h2>
             <p class="section-subtitle">
                 A full stack developer with a passion for building things and seeing places.
@@ -78,19 +101,80 @@
                         <li>Document my travels along the way</li>
                     </ul>
                 </div>
+                <div class="card">
+                    <h3>A Bit More</h3>
+                    <ul>
+                        <li>Based in Dhaka, Bangladesh</li>
+                        <li>Coffee, maps and camera in hand</li>
+                        <li>Always learning something new</li>
+                        <li>Open to freelance &amp; full-time work</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-    <section class="section" style="background-color:#eae5da;">
-        <div class="container">
+
+    <!-- Projects -->
+    <section class="section alt" id="projects">
+        <div class="container reveal">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">
+                A few things I have designed and built. Hover a card to see the details.
+            </p>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=700&q=80" alt="E-commerce project">
+                    <div class="project-overlay">
+                        <h3>ShopEase</h3>
+                        <p>A responsive e-commerce storefront with cart and checkout.</p>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80" alt="Dashboard project">
+                    <div class="project-overlay">
+                        <h3>InsightBoard</h3>
+                        <p>An analytics dashboard with charts and live data.</p>
+                        <div class="tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=700&q=80" alt="Travel blog project">
+                    <div class="project-overlay">
+                        <h3>Wander Journal</h3>
+                        <p>A travel blog where I share stories from the road.</p>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations teaser -->
+    <section class="section" id="destinations">
+        <div class="container reveal">
             <h2 class="section-title">Favourite Destinations</h2>
             <p class="section-subtitle">
-                Two places that left a mark on me. Click through for the full story.
+                Three places that left a mark on me. Click through for the full story.
             </p>
             <div class="travel-grid">
                 <div class="travel-card">
-                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=700&q=80"
-                        alt="Bali rice terraces">
+                    <div class="thumb">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=700&q=80"
+                            alt="Bali rice terraces">
+                    </div>
                     <div class="travel-card-body">
                         <h3>Bali, Indonesia</h3>
                         <p>Green rice terraces, warm beaches and temples on every corner.</p>
@@ -98,75 +182,119 @@
                     </div>
                 </div>
                 <div class="travel-card">
-                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=700&q=80"
-                        alt="Kyoto temple">
+                    <div class="thumb">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=700&q=80"
+                            alt="Kyoto temple">
+                    </div>
                     <div class="travel-card-body">
                         <h3>Kyoto, Japan</h3>
                         <p>Old temples, quiet gardens and cherry blossoms in the spring.</p>
                         <a href="kyoto.html" class="link-arrow">Read more &rarr;</a>
                     </div>
                 </div>
+                <div class="travel-card">
+                    <div class="thumb">
+                        <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=700&q=80"
+                            alt="Santorini white houses">
+                    </div>
+                    <div class="travel-card-body">
+                        <h3>Santorini, Greece</h3>
+                        <p>White-washed houses, blue domes and unforgettable sunsets.</p>
+                        <a href="santorini.html" class="link-arrow">Read more &rarr;</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="section" id="contact">
-        <div class="container">
+
+    <!-- Contact -->
+    <section class="section alt" id="contact">
+        <div class="container reveal">
             <h2 class="section-title">Get In Touch</h2>
             <p class="section-subtitle">
-                Feel free to reach out for work, collaboration or just a chat about travel.
+                Have a project in mind or just want to talk travel? Drop me a message.
             </p>
-            <div class="contact-info">
-                <div class="card">
-                    <h3>Location</h3>
-                    <p>Dhaka, Bangladesh</p>
-                </div>
-                <div class="card">
-                    <h3>Email</h3>
-                    <p>shakib@example.com</p>
-                </div>
-                <div class="card">
-                    <h3>Phone</h3>
-                    <p>+880 1900 000000</p>
-                </div>
+            <div class="contact-wrap">
+                <ul class="contact-info-list">
+                    <li>
+                        <span class="icon">&#9993;</span>
+                        <div>
+                            <span class="info-label">Email</span><br>
+                            <span class="info-value">shakib@example.com</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon">&#9742;</span>
+                        <div>
+                            <span class="info-label">Phone</span><br>
+                            <span class="info-value">+880 1900 000000</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon">&#9873;</span>
+                        <div>
+                            <span class="info-label">Location</span><br>
+                            <span class="info-value">Dhaka, Bangladesh</span>
+                        </div>
+                    </li>
+                </ul>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                    <p class="form-note" id="form-note">Thanks! Your message has been noted. &#128077;</p>
+                </form>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-inner">
                 <div class="footer-col">
                     <h4>Shakib</h4>
                     <p>Web developer and traveller sharing work and stories from the road.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <a href="index.html">Home</a>
-                    <a href="bali.html">Bali</a>
-                    <a href="kyoto.html">Kyoto</a>
-                    <a href="index.html#contact">Contact</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Follow Me</h4>
                     <div class="footer-social">
                         <a href="#" title="Twitter">X</a>
                         <a href="#" title="LinkedIn">in</a>
                         <a href="#" title="GitHub">GH</a>
                     </div>
                 </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <a href="index.html">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Destinations</h4>
+                    <a href="bali.html">Bali, Indonesia</a>
+                    <a href="kyoto.html">Kyoto, Japan</a>
+                    <a href="santorini.html">Santorini, Greece</a>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Shakib. All Rights Reserved.</p>
+                <p>&copy; 2025 Shakib. All Rights Reserved. Built with HTML &amp; CSS.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
-        });
-    </script>
+    <!-- Back to top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">&#8593;</button>
+
+    <script src="script.js"></script>
 
 </body>
 
